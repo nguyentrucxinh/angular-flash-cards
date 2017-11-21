@@ -8,7 +8,11 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "dev": "ng s -dev",
+    "prod": "ng s -prod",
+    "build-dev": "ng b -dev -op /deploy/dist",
+    "build-prod": "ng b -prod -op /deploy/dist"
   },
   "private": true,
   "dependencies": {
