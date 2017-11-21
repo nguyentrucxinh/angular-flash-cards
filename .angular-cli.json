@@ -19,9 +19,15 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.css",
+        "assets/static/style.css",
+        "assets/static/highlight-theme-github.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "assets/static/highlight.pack.js",
+        "assets/static/fastclick.min.js",
+        "assets/static/general.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
