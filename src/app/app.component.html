@@ -1,27 +1,40 @@
-<div class="row">
-  <div class="col-xs-12">
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
 
-      <br/>
-      <nav class="navbar navbar-default">
-          <div class="navbar-header">
-              <a class="navbar-brand" href="../index.html">CS Flash Cards</a>
+            <br/>
+            <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="../index.html">CS Flash Cards</a>
 
-              <ul class="nav navbar-nav navbar-right">
-                  
-                      <li><a href="">log in</a></li>
-                  
-                      <li><a href="">cards</a></li>
-                      <li><a href="">general</a></li>
-                      <li><a href="">code</a></li>
-                      <li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                      <li><a href="">log out</a></li>
-                  
-              </ul>
-          </div>
-      </nav>
+                    <ul class="nav navbar-nav navbar-right">
 
-      
-          <div class="alert alert-success" role="alert"> message </div>
-      
-  </div>
+                        <li>
+                            <a href="">log in</a>
+                        </li>
+
+                        <li>
+                            <a href="">cards</a>
+                        </li>
+                        <li>
+                            <a href="">general</a>
+                        </li>
+                        <li>
+                            <a href="">code</a>
+                        </li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                        <li>
+                            <a href="">log out</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+
+
+            <div class="alert alert-success" role="alert"> message </div>
+
+            <router-outlet></router-outlet>
+        </div>
+    </div>
 </div>
