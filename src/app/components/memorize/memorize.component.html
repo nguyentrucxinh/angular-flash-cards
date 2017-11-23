@@ -26,7 +26,7 @@
             <div class="panel-body">
                 <div class="alignContainer">
                     <div class="alignMiddle frontText">
-                        <h3 class="text-center">card.front</h3>
+                        <h3 class="text-center">{{ card.front }}</h3>
                     </div>
                 </div>
             </div>
@@ -37,14 +37,14 @@
                     <div class="alignMiddle frontText">
 
 
-                        <div class="text-center largerText">
+                        <div *ngIf="card.type == 1" class="text-center largerText">
 
-
+                            {{ card.back }}
 
                         </div>
 
 
-                        <pre><code></code></pre>
+                        <pre *ngIf="card.type == 0"><code>{{ card.back }}</code></pre>
 
                     </div>
                 </div>
