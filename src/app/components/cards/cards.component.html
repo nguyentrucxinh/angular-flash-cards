@@ -24,7 +24,7 @@
 </div>
 
 <div class="page-header">
-    <h2></h2>
+    <h2>{{ cards.length }} Card{{ cards.length > 2 ? 's' : '' }}</h2>
 </div>
 <div class="btn-group btn-group-md" role="group" aria-label="filters">
     <a href="" class="btn btn-primary">All</a>
@@ -39,7 +39,7 @@
 
 <table class="table table-bordered">
 
-    <tr>
+    <tr *ngFor="let card of cards">
         <td>
             <a href="edit" class="btn btn-xs btn-primary">
                 <i class="fa fa-pencil" aria-hidden="true"></i>
@@ -47,15 +47,15 @@
         </td>
         <td class="cardContent">
             <h4>
-
+                {{ card.front }}
             </h4>
-
-            <br />
-            <pre><code></code></pre>
+            <span *ngIf="card.type == 1">{{ card.back }}</span>
+            <!-- <br /> -->
+            <pre *ngIf="card.type == 0"><code>{{ card.back }}</code></pre>
         </td>
     </tr>
 
-    <tr>
+    <tr *ngIf="cards.length == 0">
         <td>
             <em>No cards to show.</em>
         </td>

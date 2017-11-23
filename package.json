@@ -11,8 +11,8 @@
     "e2e": "ng e2e",
     "dev": "ng s -dev",
     "prod": "ng s -prod",
-    "build-dev": "ng b -dev -op deploy/dist",
-    "build-prod": "ng b -prod -op deploy/dist"
+    "build:dev": "ng b -dev -op deploy/dist",
+    "build:prod": "ng b -prod -op deploy/dist"
   },
   "private": true,
   "dependencies": {
